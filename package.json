@@ -1,9 +1,14 @@
 {
     "name": "log2json",
     "displayName": "log2json",
-    "description": "Converts log files to json",
-    "version": "0.0.1",
-    "publisher": "FrankKubis",
+    "description": "Converts logs to json",
+    "version": "0.0.2",
+    "publisher": "frankkubis",
+    "license": "MIT",
+    "repository": {
+        "url": "https://github.com/FrankKubis/vs-code-log2json.git",
+        "type": "git"
+    },
     "engines": {
         "vscode": "^1.20.0"
     },

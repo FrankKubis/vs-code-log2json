@@ -13,11 +13,13 @@ export class SerilogConverter implements IConverter {
         let split = raw.split(LINE_SEPERATOR);
         let json = [];
         split.forEach(line => {
-            try {
-                json.push(JSON.parse(line));
-            } catch (e) {
-                window.showInformationMessage("Not a valide json, " + e.message);
-                return;
+            if (line != "" && line.length > 0) {
+                try {
+                    json.push(JSON.parse(line));
+                } catch (e) {
+                    window.showInformationMessage("Not a valide json, " + e.message);
+                    return;
+                }
             }
         });
 
